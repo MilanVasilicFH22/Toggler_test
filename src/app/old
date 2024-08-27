@@ -1,0 +1,25 @@
+import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+@Component({
+  selector: 'app-series',
+  templateUrl: './series.component.html',
+  styleUrls: ['./series.component.scss'],
+  standalone: true,
+  imports: [CommonModule]
+})
+export class SeriesComponent implements OnInit {
+  seriesList: { title: string; description: string }[] = [
+    { title: 'Stranger Things', description: 'A group of kids face supernatural forces and secret government experiments.' },
+    { title: 'The Crown', description: 'The story of the British royal family during the reign of Queen Elizabeth II.' },
+    { title: 'Money Heist', description: 'A criminal mastermind plans the biggest heist in recorded history.' },
+    { title: 'Breaking Bad', description: 'A high school chemistry teacher turned methamphetamine manufacturer.' },
+    { title: 'The Witcher', description: 'Geralt of Rivia, a mutated monster-hunter for hire, journeys toward his destiny.' }
+  ];
+
+  constructor() {}
+
+  ngOnInit() {
+    // No need to load the series; it's already hardcoded.
+  }
+}

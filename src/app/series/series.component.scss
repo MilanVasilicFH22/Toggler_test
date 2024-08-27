@@ -1,0 +1,25 @@
+.series-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+  
+  .series-item {
+    background-color: #222;
+    padding: 15px;
+    border-radius: 8px;
+    color: #fff;
+  }
+  
+  .series-item h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .series-item p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #bbb;
+  }
+  
