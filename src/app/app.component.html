@@ -1,3 +1,4 @@
 <app-header (seriesClicked)="toggleSeries()"></app-header>
-<app-series *ngIf="showSeries"></app-series>  
+<app-series *ngIf="showSeries" [seriesList]="seriesList"></app-series>  
 <app-bottom-section *ngIf="numberofclicks > 5" [numberofclicks]="numberofclicks"></app-bottom-section>
+<app-adding-button (addSeries)="addNewSeries()"></app-adding-button>
